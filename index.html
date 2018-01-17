@@ -80,8 +80,8 @@ function create() {
     player.body.collideWorldBounds = true;
 
     //  Our two animations, walking left and right.
-    player.animations.add('left', [0, 1], 0, true);
-    player.animations.add('right', [1, 2], 0, true);
+    player.animations.add('left', [0, 1], 5, true);
+    player.animations.add('right', [1, 2], 5, true);
 
     //  Finally some stars to collect
     stars = game.add.group();
