@@ -70,7 +70,9 @@ function create() {
 	
 	ledge = platforms.create(-200, 100, 'ground');
 	ledge.body.immovable = true;
-
+	
+	ledge = platforms.create(-200, 450, 'ground');
+	ledge.body.immovable = true;
 
     // The player and its settings
     player = game.add.sprite(32, game.world.height - 150, 'dude');
@@ -80,13 +82,13 @@ function create() {
 
     //  Player physics properties. Give the little guy a slight bounce.
     player.body.bounce.y = 0.2;
-    player.body.gravity.y = 500;
+    player.body.gravity.y = 450;
     player.body.collideWorldBounds = true;
 
     //  Our two animations, walking left and right.
     player.animations.add('left', [0, 1], 5, true);
     player.animations.add('right', [1, 2], 5, true);
-
+	game.camera.follow(player);
     //  Finally some stars to collect
     stars = game.add.group();
 
