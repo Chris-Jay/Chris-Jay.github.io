@@ -27,7 +27,7 @@
 			control_paddle(paddle1,game.input.y);
 
 		}
-		function create_paddle(x.y){
+		function create_paddle(x,y){
 			var paddle = game.add.sprite(x,y,'paddle');
 			paddle.anchor.setTo(0.5,0.5);
 			game.physics.arcade.enable(paddle);
