@@ -34,11 +34,11 @@
 		}
 		function control_paddle(paddle,y){
 			paddle.y = y;
-			if(paddle.y < paddle.height){
-				paddle.y =paddle.height;
+			if(paddle.y < paddle.height/3){
+				paddle.y =paddle.heigh/3t;
 			}
-			else if(paddle.y > game.world.height - paddle.height){
-				paddle.y = game.world.height -paddle.height;
+			else if(paddle.y > game.world.height - paddle.height/3){
+				paddle.y = game.world.height -paddle.height/3;
 			}
 		}
 	</script> 
