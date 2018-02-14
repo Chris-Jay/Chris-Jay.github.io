@@ -26,7 +26,7 @@
 		}
 		function create_paddle(x,y){
 			var paddle = game.add.sprite(x,y,'paddle');
-			paddle.anchor.setTo(0.5,0.5);
+			paddle.anchor.setTo(0.7,0.7);
 			game.physics.arcade.enable(paddle);
 			paddle.body.collideWorldBounds = true; 
 			return paddle;
