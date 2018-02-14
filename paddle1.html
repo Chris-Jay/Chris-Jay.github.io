@@ -41,6 +41,16 @@
 				paddle.y = game.world.height -paddle.height/2;
 			}
 		}
+		function control_paddle2(paddle,x){
+			paddle.x = x;
+			if(paddle.x < paddle.width/2){
+				paddle.x =paddle.width/2;
+			}
+			else if(paddle.x > game.world.height - paddle.width/2){
+				paddle.x = game.world.height -paddle.width/2;
+			}
+		}
+		
 	</script> 
 
 </body>
