@@ -27,9 +27,9 @@
 		function create_paddle(x,y){
 			var paddle = game.add.sprite(x,y,'paddle');
 			paddle.anchor.setTo(0.5,0.5);
-			game.physics.arcade.disable(paddle);
+			game.physics.arcade.enable(paddle);
 			paddle.body.collideWorldBounds = true; 
-			return paddle;
+			
 		}
 		function control_paddle(paddle,y){
 			paddle.y = y;
