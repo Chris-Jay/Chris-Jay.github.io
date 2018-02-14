@@ -22,7 +22,7 @@
 			 paddle2 = create_paddle(game.world.width - 16,game.world.centerY);
 		}
 		function update(){
-			control_paddle(paddle1,game.input.y);
+			control_paddle2(paddle1,game.input.x);
 		}
 		function create_paddle(x,y){
 			var paddle = game.add.sprite(x,y,'paddle');
@@ -32,15 +32,7 @@
 			
 			return paddle;
 		}
-		function control_paddle(paddle,y){
-			paddle.y = y;
-			if(paddle.y < paddle.height/2){
-				paddle.y =paddle.heigh/2;
-			}
-			else if(paddle.y > game.world.height - paddle.height/2){
-				paddle.y = game.world.height -paddle.height/2;
-			}
-		}
+
 		function control_paddle2(paddle,x){
 			paddle.x = x;
 			if(paddle.x < paddle.width/2){
