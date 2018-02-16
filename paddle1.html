@@ -19,6 +19,7 @@
 		function create(){
 			 paddle1 = create_paddle(40,game.world.centerY);
 			 paddle2 = create_paddle(game.world.width - 16,game.world.centerY);
+			paddle.body.immovable = true;
 		}
 		function update(){
 			control_paddle(paddle1,game.input.y);
